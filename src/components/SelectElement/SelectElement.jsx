@@ -3,8 +3,8 @@ import { StyledOption, StyledSelectElement } from './selectElement.styles';
 const SelectElement = ({ order, changeOrder }) => {
 	return (
 		<StyledSelectElement onChange={changeOrder} value={order}>
-			<StyledOption value='1'>Por Defecto</StyledOption>
-			<StyledOption value='2'>Por Nombre</StyledOption>
+			<StyledOption value='default'>Por Defecto</StyledOption>
+			<StyledOption value='name'>Por Nombre</StyledOption>
 		</StyledSelectElement>
 	);
 };

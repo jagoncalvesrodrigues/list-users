@@ -1,9 +1,9 @@
 import { Styledbox, StyledInput } from './textElement.styles';
 
-const TextElement = () => {
+const TextElement = ({ textF, text }) => {
 	return (
 		<Styledbox>
-			<StyledInput></StyledInput>
+			<StyledInput value={text} onInput={textF}></StyledInput>
 		</Styledbox>
 	);
 };
